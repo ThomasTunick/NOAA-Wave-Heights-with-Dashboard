@@ -3,3 +3,6 @@ Calculated daily, weekly, and monthly average wave heights then used that data t
 Had to learn how to understand and navigate NOAA's raw data and had trouble with missing points in the streamlit plot due to groupby and resample dropping certain points in weekly and monthly and replacing them with null values.
 Learned to clean and process real world time series data, group and resample data by time and category, how to use streamlit and make a simple dashboard, and methods for troubleshooting when running into errors
 Here are the pictures of the dashboard below separated by daily, weekly, and monthly
+![Daily](Screenshot 2025-08-25 165509.png)  
+![Weekly](Screenshot 2025-08-25 165513.png)  
+![Monthly](Screenshot 2025-08-25 165520.png)
