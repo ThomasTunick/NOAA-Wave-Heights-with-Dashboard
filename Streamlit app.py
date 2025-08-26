@@ -12,7 +12,7 @@ def load_data():
 daily_avg = load_data()
 
 # App Title
-st.title("🌊 NOAA Wave Height Dashboard")
+st.title("NOAA Wave Height Dashboard")
 st.markdown("Visualize average wave heights by region using NOAA buoy data.")
 
 # Aggregation selector
@@ -44,7 +44,7 @@ regions = df["region"].unique()
 for region in regions:
     region_data = df[df["region"] == region]
 
-    st.subheader(f"📈 {region} – {aggregation} Average Wave Height")
+    st.subheader(f" {region} – {aggregation} Average Wave Height")
 
     fig, ax = plt.subplots(figsize=(12, 5))
     ax.plot(region_data["date"], region_data["avg_wave_height"], marker='o', label=region)
@@ -61,7 +61,7 @@ if st.checkbox("Show raw data table"):
 
 # Monthly summary stats
 if aggregation == "Monthly":
-    st.subheader("📊 Monthly Summary – Highest and Lowest by Region")
+    st.subheader(" Monthly Summary – Highest and Lowest by Region")
 
     stats = (
         df.groupby("region")
@@ -76,7 +76,7 @@ if aggregation == "Monthly":
 
     for _, row in stats.iterrows():
         st.markdown(
-            f"**{row['region']}** → "
-            f"📈 Highest: {row['max_value']:.2f} m in {row['max_date'].strftime('%B %Y')} | "
-            f"📉 Lowest: {row['min_value']:.2f} m in {row['min_date'].strftime('%B %Y')}"
+            f"**{row['region']}**  "
+            f"Highest: {row['max_value']:.2f} m in {row['max_date'].strftime('%B %Y')} | "
+            f"Lowest: {row['min_value']:.2f} m in {row['min_date'].strftime('%B %Y')}"
         )
