@@ -4,3 +4,6 @@ Had to learn how to understand and navigate NOAA's raw data and had trouble with
 Learned to clean and process real world time series data, group and resample data by time and category, how to use streamlit and make a simple dashboard, and methods for troubleshooting when running into errors
 Here are the pictures of the dashboard below separated by daily, weekly, and monthly
 
+![Daily](images/Screenshot%202025-08-25%20165509.png)
+![Weekly](images/Screenshot%202025-08-25%20165513.png)
+![Monthly](images/Screenshot%202025-08-25%20165520.png)
